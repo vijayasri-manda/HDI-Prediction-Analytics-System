@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "name": "Numerical and API tests",
+      "result": "21 passed; 1,407 parity cases, maximum error 2.220446049250313e-16."
+    },
+    {
+      "name": "TypeScript",
+      "result": "Passed; final production build also runs tsc -b."
+    },
+    {
+      "name": "ESLint",
+      "result": "Passed; targeted final source recheck recorded separately."
+    },
+    {
+      "name": "Production build",
+      "result": "Passed; Vite 7.3.7, 2,182 modules."
+    },
+    {
+      "name": "Chrome functional checks",
+      "result": "11 distinct tests passed across initial run and focused rechecks."
+    },
+    {
+      "name": "Production Chrome check",
+      "result": "1 passed; built assets, route refresh and inference offline after load."
+    },
+    {
+      "name": "Actual screenshots",
+      "result": "10 captures with real local data and no credentials; no provider request."
+    }
+  ],
+  "browser": {
+    "initial": {
+      "passed": 10,
+      "failed": 1,
+      "cause": "High-development badge contrast 4.27:1"
+    },
+    "recheck": {
+      "passed": 1,
+      "failed": 2,
+      "causes": [
+        "Axe sampled a heading during its entrance animation",
+        "Six-route dark audit exceeded 45 seconds under concurrent build load"
+      ]
+    },
+    "resolution": "Darker category text; reduced-motion snapshots for deterministic accessibility; 90-second budget for six-route audits. Both accessibility checks then passed.",
+    "distinctTestsPassed": 11
+  },
+  "limitations": [
+    "No new live Groq request; provider responses injected only in explicit tests",
+    "No Vercel deployment, push or commit",
+    "No Git metadata in downloaded workspace",
+    "No model retraining; metrics read from existing artifacts",
+    "Chrome checks do not establish universal device or human accessibility coverage"
+  ],
+  "captures": {
+    "date": "2026-10-28",
+    "source": "Actual local Chromium browser; no AI output fixtures or credentials used",
+    "screenshots": [
+      {
+        "file": "home.png",
+        "state": "Default India 2023 summary, published data and navbar"
+      },
+      {
+        "file": "explore.png",
+        "state": "Cyprus and China, observations through 2023"
+      },
+      {
+        "file": "trend-detail.png",
+        "state": "Actual Cyprus/China chart and published 2023 summary"
+      },
+      {
+        "file": "predictor.png",
+        "state": "Genuine India preset calculation; no AI request"
+      },
+      {
+        "file": "scenarios.png",
+        "state": "Baseline India preset; scenario life expectancy 78 and mean schooling 10"
+      },
+      {
+        "file": "methodology.png",
+        "state": "Committed evaluation metrics and held-out scatter samples"
+      },
+      {
+        "file": "ai-settings.png",
+        "state": "Unconfigured settings dialog, empty credential field"
+      },
+      {
+        "file": "explore-mobile.png",
+        "state": "390px viewport; actual responsive Cyprus/China plot"
+      }
+    ],
+    "prediction": {
+      "score": "0.680 / 1.000",
+      "inputs": [
+        {
+          "id": "predict-life_expectancy",
+          "value": "72"
+        },
+        {
+          "id": "predict-expected_schooling",
+          "value": "12.95"
+        },
+        {
+          "id": "predict-mean_schooling",
+          "value": "6.88"
+        },
+        {
+          "id": "predict-gni_per_capita",
+          "value": "9046.76"
+        }
+      ]
+    },
+    "scenario": {
+      "delta": "+0.0692",
+      "inputs": [
+        {
+          "id": "scenario-life_expectancy",
+          "value": "78"
+        },
+        {
+          "id": "scenario-expected_schooling",
+          "value": "12.95"
+        },
+        {
+          "id": "scenario-mean_schooling",
+          "value": "10"
+        },
+        {
+          "id": "scenario-gni_per_capita",
+          "value": "9046.76"
+        }
+      ]
+    },
+    "finalRecapture": {
+      "files": [
+        "sensitivity.png",
+        "scenarios.png"
+      ],
+      "reason": "Distinct sensitivity tick labels and higher-contrast category badge",
+      "capturedAt": "2026-10-28T16:37:18.041Z"
+    },
+    "visualReview": "All ten captures inspected. Final sensitivity axis labels are distinct and legible; scenario badge contrast corrected.",
+    "retainedFiles": 8,
+    "archiveNote": "All 10 original captures are preserved in the local historical backup; 8 report figures remain here."
+  },
+  "chartDiagnosis": {
+    "cause": "max-width:100% constrains the Recharts wrapper to its zero-width measurement parent",
+    "before": [
+      {
+        "class": "recharts-wrapper",
+        "width": 0,
+        "height": 330,
+        "stroke": "none"
+      },
+      {
+        "class": "recharts-surface",
+        "width": 0,
+        "height": 330,
+        "stroke": "none"
+      },
+      {
+        "class": "recharts-curve recharts-area-curve",
+        "width": 639,
+        "height": 42.2249755859375,
+        "stroke": "rgb(8, 145, 178)"
+      },
+      {
+        "class": "recharts-curve recharts-area-curve",
+        "width": 639,
+        "height": 78.7860107421875,
+        "stroke": "rgb(13, 121, 109)"
+      }
+    ],
+    "after": [
+      {
+        "class": "recharts-wrapper",
+        "width": 691,
+        "height": 330,
+        "stroke": "none"
+      },
+      {
+        "class": "recharts-surface",
+        "width": 691,
+        "height": 330,
+        "stroke": "none"
+      },
+      {
+        "class": "recharts-curve recharts-area-curve",
+        "width": 639,
+        "height": 42.2249755859375,
+        "stroke": "rgb(8, 145, 178)"
+      },
+      {
+        "class": "recharts-curve recharts-area-curve",
+        "width": 639,
+        "height": 78.7860107421875,
+        "stroke": "rgb(13, 121, 109)"
+      }
+    ]
+  },
+  "reportReview": {
+    "pages": 32,
+    "figures": 9,
+    "originalReviewedPages": 38,
+    "allPagesVisuallyReviewed": true
+  },
+  "phase": "Preserved Phase 4 evidence before final cleanup"
+}

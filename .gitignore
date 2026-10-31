@@ -1,0 +1,30 @@
+# Local credentials (the example contains no secrets)
+.env
+.env.*
+!.env.example
+# Recreated dependencies, builds and test output
+node_modules/
+dist/
+.vercel/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.log
+# Python tooling and local databases
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+instance/
+# Local preservation archive: retain separately; never upload as a project ZIP
+7. Project Documentation/Historical project backup.zip
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

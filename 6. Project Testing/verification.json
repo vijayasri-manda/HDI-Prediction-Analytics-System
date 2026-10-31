@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-28",
+  "phase": "Final repository cleanup",
+  "node": "24.20.0",
+  "npm": "11.16.0",
+  "installation": "npm ci passed",
+  "typecheck": "passed",
+  "lint": "passed; changed helpers/test also checked",
+  "nodeTests": {
+    "passed": 22,
+    "parityCases": 1407,
+    "maximumAbsoluteError": 2.220446049250313e-16
+  },
+  "build": {
+    "standardCommand": "npm run build",
+    "result": "passed",
+    "vite": "7.3.7",
+    "modules": 2182,
+    "initialSandboxFailure": "Vite default config loader could not read parent directory; standard build passed after approval; native config loader also passed in sandbox"
+  },
+  "productionBrowser": {
+    "stats": {
+      "startTime": "2026-10-28T17:57:22.254Z",
+      "duration": 222323.59999999998,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "errors": [],
+    "previewLoader": "native",
+    "coverage": "Built assets, hash refresh, offline prediction and scenario"
+  },
+  "browser": {
+    "stats": {
+      "startTime": "2026-10-28T18:01:10.028Z",
+      "duration": 195788.846,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "errors": [],
+    "coverage": "11 tests: charts, mobile/desktop, themes, axe, exports, navigation, errors and personal-key state"
+  },
+  "protectedArtifacts": {
+    "8. Project Demonstration/ml/download_data.py": true,
+    "8. Project Demonstration/ml/requirements.txt": true,
+    "8. Project Demonstration/ml/train.py": true,
+    "8. Project Demonstration/public/data/countries.json": true,
+    "8. Project Demonstration/public/data/evaluation.json": true,
+    "8. Project Demonstration/public/data/model.json": true,
+    "8. Project Demonstration/public/data/parity.json": true,
+    "8. Project Demonstration/data/processed/undp_panel.csv": true,
+    "8. Project Demonstration/data/raw/raw_hdi_data.csv": true,
+    "8. Project Demonstration/data/raw/undp_hdr2025.csv": true,
+    "8. Project Demonstration/shared/inference.mjs": true
+  },
+  "builtDataMatchesSource": {
+    "countries.json": true,
+    "evaluation.json": true,
+    "explorer.json": true,
+    "model.json": true,
+    "parity.json": true
+  },
+  "functionIsolation": "Passed with only api/insights.mjs, shared/inference.mjs and public/data/model.json",
+  "report": {
+    "pages": 32,
+    "imagesRetained": 8,
+    "renderer": "Installed Firefox PDF.js and Chrome",
+    "visualReview": "All 32 rendered pages inspected; full-size checks for tables and personal-key dialog",
+    "htmlMissingImages": 0,
+    "htmlContentOverflows": 0,
+    "sha256": "808f8ab6bcbddfa7a69560bd83522cfd5e18ded9068d9603c979fa8f60a35c7c"
+  },
+  "backup": {
+    "archive": "7. Project Documentation\\Historical project backup.zip",
+    "files": 262,
+    "bytes": 22602311,
+    "sha256": "4fd8602f6fad9536dda73d0d227db2d5de4f7f73e50eeab646818a7c0ac5c5ea",
+    "verified": true
+  },
+  "limitations": [
+    "Vercel CLI unavailable; authentic Vercel bundle and deployment not verified",
+    "No live Groq call during cleanup",
+    "No push, commit, deployment or retraining",
+    "Exposed credentials require rotation by owner"
+  ],
+  "generatedOutputsRemovedAfterVerification": [
+    "8. Project Demonstration/dist",
+    "8. Project Demonstration/test-results",
+    "8. Project Demonstration/tsconfig.tsbuildinfo",
+    "8. Project Demonstration/playwright.cleanup.config.ts"
+  ],
+  "repositoryAudit": {
+    "mode": "isolated Git candidate index",
+    "candidateFiles": 92,
+    "eightFoldersOnly": true,
+    "nestedDirectoriesInFolders1to7": [],
+    "forbiddenStagedPaths": [],
+    "credentialLikePaths": [],
+    "brokenLinks": [],
+    "backup": {
+      "present": true,
+      "entries": 262,
+      "hashesVerified": true,
+      "secretLikeEntries": []
+    },
+    "localEnvironmentInspectedWithoutPrintingValues": true,
+    "passed": true
+  }
+}

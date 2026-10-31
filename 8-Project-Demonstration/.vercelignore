@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vercel/
+/data/
+ml/
+tests/
+test-results/
+playwright-report/
+public/data/parity.json
+scripts/audit-repository.py
+scripts/capture-report.mjs
+scripts/build-academic-report.mjs
+*.tsbuildinfo
+.env*
